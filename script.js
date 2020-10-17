@@ -58,8 +58,8 @@ function getAuthorQuote() {
 }
 
 function handleResonse(json) {
-    document.getElementById("quoteHolder").textContent = json.quoteText
-    document.getElementById("quoteAuthor").textContent = json.quoteAuthor
+    document.getElementById("quoteText").textContent = "\"" + json.quoteText + "\""
+    document.getElementById("quoteAuthor").textContent = "-" + json.quoteAuthor
     currentGenre = json.quoteGenre
     currentAuthor = json.quoteAuthor
 }
